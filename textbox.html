@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="euc-kr">
+<title>무제 문서</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="page1" data-position="fixed">
+	<div data-role="header">
+    <h1>header</h1>
+</div>
+<div data-role="content">
+	<p>Base Page</p>
+    <a href="#dialog1" data-role="button" data-rel="dialog">textbox page1</a>
+    <a href="#dialog2" data-role="button">textbox page2</a>
+</div>
+<div data-role="footer" data-position="fixed">
+	<h4>footer</h4>
+</div>
+</div>
+
+<div data-role="page" id="dialog1" data-position="fixed">
+	<div data-role="header">
+    <h1>dialog1</h1>
+    </div>
+<div data-role="content">
+	<p>text box page1</p>
+    <a href="#page1" data-role="button">base page1</a>
+    <a href="#dialog2" data-role="button"> textbox page2</a>
+</div>
+</div>
+<div data-role="dialog" id="dialog2" data-position="fixed">
+	<div data-role="header">
+    <h1>dialog2</h1>
+</div>
+<div data-role="content">
+	<p> textbox page2</p>
+    <a href="#page1" data-role="button">base pase1</a>
+    <a href="#dialog1" data-role="button">textbox page1</a>
+    </div>
+    </div>
+</body>
+</html>

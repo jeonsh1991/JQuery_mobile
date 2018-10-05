@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="euc-kr">
+<title>무제 문서</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+    	<form>
+        	<h3>Login Panel</h3>
+            <label for="name">UserName:</label>
+            <input name="name" id="name" type="text" value="" data-mini="true" data-clear-btn="true">
+            <label for="password">Password : </label>
+            <input name="password" id="password" type="password" value="" data-clear-btn="true">
+            <div class="ui-grid-a">
+            	<div class="ui-block-a"><a href="#" data-role="button" data-rel="close">Cancel</a></div>
+                <div class="ui-block-b"><a href="#" data-role="button" data-rel="close">save</a></div>
+            </div>
+         </form>
+      </div>
+      
+      <div data-role="panel" id="panel2" data-display="push">
+      	<ul data-role="listview">
+        	<li data-icon="delete"><a href="#" data-rel="close">MENU PANEL</a></li>
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+         </ul>
+      </div>
+      
+      <div data-role="panel" id="panel3" data-display="push" data-position="right">
+      	<h3>Panel Memo</h3>
+        <p>Panel3 content</p>
+        <a href="#page1" data-role="button" data-rel="close" data-inline="true">Panel Close</a>
+      </div>
+      
+      <div data-role="header">
+      <h1>header</h1>
+      </div>
+      
+      <div data-role="content">
+      <a href="#panel1" data-role="button" data-inline="true">Login Panel</a>
+      <a href="#panel2" data-role="button" data-inline="true">Menu Panel</a>
+      <a href="#panel3" data-role="button" data-inline="true">Memo Panel</a>
+      </div>
+      <div data-role="footer" data-position="fixed">
+      <h4>footer</h4>
+      </div>
+</div>
+</body>
+</html>

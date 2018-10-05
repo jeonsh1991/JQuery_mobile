@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="euc-kr">
+<title>무제 문서</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="page1">
+	<div data-role="header">
+    <h1>header</h1>
+</div>
+<div data-role="content">
+<p>base Page</p>
+<a href="#dialog1" data-transition="slide">actionsheet page1</a>
+<a href="#dialog2" data-transition="fade">actionsheet page2</a>
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h4>footer</h4>
+</div>
+</div>
+
+<div data-role="dialog" id="dialog1">
+	<div data-role="content">
+    <p>action sheet1</p>
+    <a href="#" data-role="button">select1</a>
+    <a href="#" data-role="button">select1</a>
+    <a href="#" data-role="button">select1</a>
+    <a href="#" data-role="button">select1</a>
+    <a href="#" data-role="button" data-rel="back">cancel</a>
+    </div>
+    </div>
+    
+<div data-role="dialog" id="dialog2">
+	<div data-role="content">
+    <p>action sheet2</p>
+    <p>delete?</p>
+    <a href="#" data-role="button" data-rel="back">Yes</a>
+    <a href="#dialog1" data-role="button" data-rel="back">No</a>
+</div>
+</div>
+</body>
+</html>
